@@ -11,6 +11,9 @@ let lan = []
 app.get("/", (req, res) => {
   res.render("index", { plNames: lan })
 })
+app.get("/contact", (req, res) => {
+  res.render("contact", {})
+})
 app.post("/", (req, res) => {
   const lang = req.body.language
   lan.push(lang.toUpperCase())
