@@ -15,7 +15,7 @@
         <button type="submit">Add</button>
       </form>
 
-      <ul>
+      <ol>
         <% if(plNames){ %>
           <% for(let x=0; x<plNames.length; x++){ %>
             <li><%= plNames[x] %></li>
@@ -23,7 +23,7 @@
       <% }else{ %>
       <p>no data found</p>
       <% } %>
-      </ul>
+      </ol>
     </main>
     <%- include("layout/footer")%>
   </body>
